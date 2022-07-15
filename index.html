@@ -13,7 +13,27 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="email=no" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <style>
+      #container{
+        padding: 20px;
+      }
+    </style>
   </head>
 
-  <body></body>
+  <body>
+    <div id="container">
+    </div>
+    <script id="render" type="text/html">
+      <ul>
+        {{each list}}
+        <li>{{$index}}--------{{$value.name}}</li>
+        {{/each}}
+    </ul>
+    </script>
+    
+    
+    <script src="./js/art-template.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
